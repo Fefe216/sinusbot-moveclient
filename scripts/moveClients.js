@@ -22,8 +22,11 @@ registerPlugin({
 	}
 
 	if (!config.requiredChannelGroups) {
-		config.requiredChannelGroups = '14, 16, 18';
+		config.requiredChannelGroups = '14,16,18';
 	}
+
+	config.requiredChannelGroups = config.requiredChannelGroups.replace(/\s/g, "");
+	config.moveCommand = config.moveCommand.replace(/\s/g, "");
 
 	const moveCommand = config.moveCommand;
 	const factionChannel = backend.getChannelByID(config.factionChannel);
