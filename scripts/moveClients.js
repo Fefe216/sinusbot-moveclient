@@ -1,6 +1,6 @@
 registerPlugin({
 	name: 'Move Clients',
-	version: '1.0.0',
+	version: '1.0.1',
 	description: 'Erlaubt es, andere Clients in den eigenen Channel zu verschieben ohne selbst Rechte zum Verschieben zu besitzen.',
 	author: 'Fefe <fefe@life-of-german.org>',
 	autorun: false,
